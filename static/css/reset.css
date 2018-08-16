@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+*,html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,
+table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+    margin: 0 auto;
+    padding:0;
+    letter-spacing: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+header,footer,section,article,aside,nav,address,figure,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+ul li{list-style: none;}
+input{outline: none;border:0}
+a{text-decoration: none;}
+img{border:none}
+.clearfix{*zoom:1;}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

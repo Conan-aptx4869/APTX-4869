@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="detail-close">
-        <i class="close">×</i>
+        <i class="close" @click="closed">×</i>
       </div>
     </div>
   </div>
@@ -61,6 +61,9 @@
     methods: {
       showDetail () {
         this.detailShow = true;
+      },
+      closed () {
+        this.detailShow = false;
       }
     },
     created () {

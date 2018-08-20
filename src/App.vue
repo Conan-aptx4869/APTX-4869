@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <headers></headers>
+    <headers :seller="seller"></headers>
     <div class="tab">
       <div class="tab-item">
         <router-link to="/goods">商品</router-link>
@@ -29,7 +29,9 @@
     },
     created: function () {
       this.$http.get('/static/data/data.json').then((res) => {
-        console.log(res);
+        var data = res.data;
+        this.seller = data.seller;
+       // console.log(this.seller);
       });
     }
   };
